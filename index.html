@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Network Lab Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <aside class="sidebar">
+      <h1>🧪 Network Lab</h1>
+      <p class="subtitle">Simulator TKJ Interaktif</p>
+
+      <div class="device-list">
+        <button class="device-btn" data-type="pc">💻 PC Client</button>
+        <button class="device-btn" data-type="switch">🖧 Switch</button>
+        <button class="device-btn" data-type="router">📡 Router</button>
+        <button class="device-btn" data-type="server">🌐 Server</button>
+        <button class="device-btn" data-type="printer">🖨️ Printer</button>
+      </div>
+
+      <div class="info-box">
+        <p>🖱️ Klik device untuk tambah ke canvas</p>
+        <p>🔌 Klik 2 device untuk connect</p>
+        <p>📦 Paket data akan bergerak otomatis</p>
+      </div>
+
+      <button id="resetBtn" class="reset-btn">Reset Lab</button>
+    </aside>
+
+    <main class="canvas-container">
+      <svg id="connectionLayer"></svg>
+      <div id="canvas"></div>
+
+      <div class="traffic-monitor">
+        <h3>Traffic Monitor</h3>
+        <p id="stats">0 Device • 0 Connection</p>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
